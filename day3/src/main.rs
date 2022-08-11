@@ -22,12 +22,16 @@ fn main() {
             }
         };
         match r.cmp(&input_num) {
-            Ordering::Less => { println!("太大了！"); }
+            Ordering::Less => {
+                println!("太大了！");
+            }
             Ordering::Equal => {
                 println!("正确！初始数字是：{}", r);
                 break;
             }
-            Ordering::Greater => { println!("太小了！"); }
+            Ordering::Greater => {
+                println!("太小了！");
+            }
         }
     }
 }
